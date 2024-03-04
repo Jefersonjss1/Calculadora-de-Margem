@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Margem</title>
+    <link rel="stylesheet" href="/Calculadora de Margem/CSS/styles.css">
+    <script src="../script.js"></script>
+</head>
+<body>
+    <main>
+        <div class="div-container">
+            
+                <h1>Calculadora de Margem Sobre Custo</h1>
+                <label>Custo do produto</label>
+                <input type="number" name="text" id="custo">
+                <label>Mark-up</label>
+                <input type="number" name="text" id="mark-up">
+
+            <button id="calcular" onclick="calcular()">Calcular</button>
+            <div id="infos" class="hidden">
+                <div class="result" id="result">
+                    <div class="result1">
+                        <div class="mark-up-id">
+                            <span>Mark-Up</span>
+                            <span id="mark-up-id"></span>
+                        </div>
+                        <div class="custo-mark">
+                            <span>Custo com Mark-up</span>
+                            <span id="custo-mark"></span>
+                        </div>
+                        <div class="preco-venda">
+                            <span>Preço de Venda</span>
+                            <span id="preco-venda"></span>
+                        </div>
+                        <div class="icms">
+                            <span>ICMS de 18%</span>
+                            <span id="icms"></span>
+                        </div>
+                    </div>
+        
+                    <div class="result2">
+                        <div class="pis-cof">
+                            <span>PIS/COF de 9,25%</span>
+                            <span id="pis-cof"></span>
+                        </div>
+                        <div class="ipi">
+                            <span>Custo com IPI de 15%</span>
+                            <span id="ipi"></span>
+                        </div>
+                        <div class="margem-lucro">
+                            <span>Margem de Lucro</span>
+                            <span id="margem-lucro"></span>
+                        </div>
+                        <div class="margem-porc">
+                            <span>Margem em Porcentagem</span>
+                            <span id="margem-porc"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
